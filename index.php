@@ -27,27 +27,52 @@
       <h4>Bitcoin (BTC)</h4>
       <p class="tag">
       	<?php
-      		$url = "https://coinbase.com/api/v2/prices/ETHUSD/buy";
+      		$url = "https://coinbase.com/api/v2/prices/BTCUSD/buy";
 			$json = json_decode(file_get_contents($url), true);
 			$price = $json["amount"];
-			echo $price;
+		  	$price = ($price * 0.075);
+		  	echo $price;
       	?>
       </p>
       <p class="text_column">Bitcoin is the first and best cryptocurrency. Bitcoin is also known as BTC. It allows for instant peer-to-peer transactions. It has worldwide payments and zero or low processing fees.</p>
     </div>
     <div class="thumbnail"> <a href="#"><img src="images/eth.png" alt="" width="100"/></a>
       <h4>Ether (ETH)</h4>
-      <p class="tag">PRICE PLACEHOLDER</p>
+      <p class="tag">
+     	<?php
+      		$url = "https://coinbase.com/api/v2/prices/ETHUSD/buy";
+			$json = json_decode(file_get_contents($url), true);
+			$price = $json["amount"];
+		  	$price = ($price * 0.075);	
+		  	echo $price;
+      	?>
+      </p>
       <p class="text_column">Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third party interference.</p>
     </div>
     <div class="thumbnail"> <a href="#"><img src="images/ltc.png" alt="" width="100"/></a>
       <h4>Litecoin (LTC)</h4>
-      <p class="tag">PRICE PLACEHOLDER</p>
+      <p class="tag">
+     	<?php
+      		$url = "https://coinbase.com/api/v2/prices/LTCUSD/buy";
+			$json = json_decode(file_get_contents($url), true);
+			$price = $json["amount"];
+		  	$price = ($price * 0.075);
+			echo $price;
+      	?>
+      </p>
       <p class="text_column">Litecoin is the first Scrypt based cryptocurrency. Litecoin is by far and away the biggest market cap of the alt-coins. Litecoin provides faster transaction confirmations and uses a memory-hard, scrypt-based mining proof-of-work algorithm. Litecoin is also known as LTC.</p>
     </div>
     <div class="thumbnail"> <a href="#"><img src="images/xrp.png" alt="" width="100"/></a>
       <h4>Ripple (XRP)</h4>
-      <p class="tag">PRICE PLACEHOLDER</p>
+      <p class="tag">
+     	<?php
+      		$url = "https://coinbase.com/api/v2/prices/XRPUSD/buy";
+			$json = json_decode(file_get_contents($url), true);
+			$price = $json["amount"];
+		  	$price = ($price * 0.075);
+			echo $price;
+      	?>
+      </p>
       <p class="text_column">Ripple is also known as XRP. XRP is the 2nd largest market cap coin. Eobot has Cloud Mining of BTC that can automatically be converted into XRP. Ripple, or XRP, is a payment protocol that functions as a payment system, currency exchange and a remittance network and works with fiat currencies, cryptocurrencies, and commodities.</p>
     </div>
    </div>
